@@ -1,0 +1,8 @@
+/**app.wxss**/
+button {
+  outline: none;
+  border: none;
+}
+.container {
+
+}

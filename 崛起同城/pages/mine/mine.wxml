@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="content">
+    <view class="top">
+      <image src="{{ portrait}}" class="touxiang"></image>
+      <button class="name" open-type="getUserInfo" wx:if="{{hasUserInfo}}"
+        bindgetuserinfo="doAuthorization">请登录</button>
+      <view class="username">{{nickname}}</view>
+      <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"
+        class="aa {{stat? 'to-top' : 'to-bottom'}}">是否电话授权</button>
+    </view>
+  </view>
+  <view class="anniu" bindtap="move">
+    <text>报名记录</text>
+  </view>
+  <view class="anniu" bindtap="go">
+    <text>完善资料</text>
+  </view>
+  <view class="anniu">
+    <text>安全退出</text>
+  </view>
+
+</view>

@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="top">
+      <!--   <image src="../../static/01.png"></image> -->
+      <view class="page-body">
+        <view class="page-section page-section-spacing swiper">
+          <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+            duration="{{duration}}" indicator-color="{{indicatorColor}}"
+            indicator-active-color="{{indicatorActiveColor}}">
+            <block wx:for="{{banner}}" wx:key="*this">
+              <swiper-item>
+                <view class="swiper-item">
+                  <image src=" http://tc.mb.cjsit.cn/{{item.image}}"> </image>
+                </view>
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+      </view>
+      <!--  -->
+    </view>
+    <view class="body1">
+      <view class="baomingjilu" bindtap="baomingjilu">
+        <view>精选</view>
+      </view>
+      <view class="yaoqinghaoyou" bindtap="yaoqingjilu">
+        <view>房产</view>
+      </view>
+      <view class="saomajilu" bindtap="saomajilu">
+        <view>汽车</view>
+      </view>
+    </view>
+    <view class="body2">
+      <view class="body2-concent" wx:for="{{hospital}}" wx:key="index"  data-id="{{item.id}}" bindtap="go">
+        <view class="left">
+          <image src="{{item.image}}" bindtap="xiangqing"></image>
+        </view>
+        <view class="right">
+          <view class="right1" bindtap="xiangqing">{{item.name}}</view>
+          <view class="right2">
+            <view class="text1">地址：</view>
+            <view class="text2">{{item.address}}</view>
+          </view>
+          <view class="right3">
+            <text>时间:</text>
+            <text>{{item.star_time}}</text></view>
+        </view>
+      </view>
+     
+    </view>
+  </view>
+</view>

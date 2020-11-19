@@ -1,0 +1,39 @@
+.top {
+  margin: 30rpx auto;
+  text-align: center
+}
+
+.to-bottom {
+  display: none
+}
+.aa{background:white}
+.to-top {
+  display: block
+}
+
+.touxiang {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 90rpx
+}
+
+.name {
+  font-size: 40rpx;
+  padding-top: 20rpx;
+  background: white;
+  color: black
+}
+
+
+.username {
+  font-size: 40rpx;
+  padding-top: 20rpx;
+  background: white;
+  color: black
+}
+
+.anniu {
+  color: black;
+  border-bottom: 1px solid #E7E7E7;
+  padding: 30rpx 20rpx
+}
